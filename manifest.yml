@@ -1,5 +1,5 @@
   applications:
-  - name: dealerreiew
+  - name: dealerreiew-pranav
     routes:
       - route: host.domain
     memory: 128M
