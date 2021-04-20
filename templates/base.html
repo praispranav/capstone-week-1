@@ -31,17 +31,16 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="django/about">About</a>
+              <a class="nav-link" href="{% url 'app1:about' %}">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="django/contact">Contact</a>
+              <a class="nav-link" href="{% url 'app1:contact' %}">Contact</a>
             </li>
             
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          <a href="{% url 'app1:login' %}" class="nav-link"><button class="btn btn-secondary">Login</button></a>
+          <a href="{% url 'app1:signup' %}" class="nav-link"><button class="btn btn-secondary">SignUp</button></a>
+          <a href="{% url 'app1:LogOut' %}" class="nav-link"><button class="btn btn-secondary">LogOut</button></a>
         </div>
       </nav>
 
